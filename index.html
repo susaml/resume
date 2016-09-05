@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>简历生成器</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/remodal-1.1.0/remodal.css">
+    <link rel="stylesheet" href="static/remodal-1.1.0/remodal-default-theme.css">
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/remodal-1.1.0/remodal.min.js"></script>
+    <script src="static/js/script.js"></script>
+</head>
+
+<body>
+    <div class="container" id="cv">
+        <div class="side">
+            <div class="me">
+                <div class="portrait"></div>
+                <div class="remodal remodal-img" data-remodal-id="portrait-modal">
+                    <h3>请输入图片URL地址：</h3>
+                    <br/>
+                    <input type="text" id="avatar-url">
+                    <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
+                </div>
+                <h1 id="username" >Ken</h1>
+                <h4 id="persona-tag" >Java / Web / 互联网</h4>
+            </div>
+            <div class="profile info-unit">
+                <h2 class="info-header"><i class="iconfont icon-person"></i> <span class="info-title">基本信息</span></h2>
+                <hr>
+                <ul class="info-list">
+                    <li>
+                        <label class="left-label">姓名</label><span class="label-value">罗辉</span></li>
+                    <li>
+                        <label class="left-label">性别</label><span class="label-value">男</span></li>
+                    <li>
+                        <label class="left-label">年龄</label><span class="label-value">33</span></li>
+                    <li>
+                        <label class="left-label">学历</label><span class="label-value">本科</span></li>
+                    <li>
+                        <label class="left-label">院校</label><span class="label-value">福建华侨大学</span></li>
+                    <li>
+                        <label class="left-label">专业</label><span class="label-value">计算机科学与技术</span></li>
+                </ul>
+            </div>
+            <div class="contact info-unit">
+                <h2 class="info-header"><i class="iconfont icon-call"></i> <span class="info-title">联系方式</span></h2>
+                <hr>
+                <ul class="info-list">
+                    <li>
+                        <label class="left-label">手机</label><span class="label-value">137-1218-0979</span></li>
+                    <li>
+                        <label class="left-label">邮箱</label><span class="label-value">29398277#qq.com</span></li>
+                    <li>
+                        <label class="left-label">Github</label><span class="label-value">github.com/susaml</span></li>
+                </ul>
+            </div>
+            <div class="skill info-unit">
+                <h2 class="info-header"><i class="iconfont icon-star"></i> <span class="info-title">技能点</span></h2>
+                <hr>
+                <ul class="progress-list">
+                    <li>
+                        <label class="left-label">Java</label>
+                        <progress value="90" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">HTML / CSS</label>
+                        <progress value="80" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">Javascript</label>
+                        <progress value="80" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">C\C++ / Linux</label>
+                        <progress value="70" max="100"></progress>
+                    </li>
+                </ul>
+            </div>
+            <div class="stack info-unit">
+                <h2 class="info-header"><i class="iconfont icon-build"></i> <span class="info-title">技术栈</span></h2>
+                <hr>
+                <ul class="stack-list">
+                    <li>
+                        <label class="left-label">前端</label><span class="label-value">jQuery、Bootstrap、Datatables</span></li>
+                    </li>
+                    <li>
+                        <label class="left-label">后端</label><span class="label-value">Spring、Structs、Hibernate、Mybatis、MySQL、Redis</span></li>
+                    </li>
+                    <li>
+                        <label class="left-label">其它</label><span class="label-value">Nginx、Tomcat、Jetty</span></li>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="code info-unit">
+                <h2 class="info-header"><i class="iconfont icon-weixin"></i> <span class="info-title">个人微信</span></h2>
+                <hr>
+                <div class="weixin">
+                    <img src="static/image/weixin.png" alt="">
+
+                </div>
+            </div>
+            <div class="remodal remodal-img" data-remodal-id="weixin-modal">
+                <h3>请输入图片URL地址：</h3>
+                <br/>
+                <input type="text" id="weixin-url">
+                <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
+            </div>
+        </div>
+        <div class="main">
+            <div class="objective info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-favorite"></i> <span class="info-title">求职意向</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>项目经理，系统架构设计师，系统分析员，软件工程师</h3>
+                    </li>
+                </ul>
+            </div>
+            <div class="education info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-education"></i> <span class="info-title">教育经历</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>福建华侨大学 - 计算机科学与技术（本科）2003-2007</h3>
+                    </li>
+                </ul>
+            </div>
+            <div class="work info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-work"></i> <span class="info-title">工作经历</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>2008.03--2016.09 东莞市柏亚贸易有限公司 【系统分析员】</h3>
+                        <p>
+                            主要是从事公司ERP二次开发，ERP单据报表设计及编码。公司OA系统需求设计，架构设计，Web Service API设计，系统核心代码编写。改造公司旧系统，从Access单机系统，C/S架构向B/S架构转变。
+                        </p>
+                    </li>
+                    <li>
+                        <h3>2007.07--2008.01 深圳永晋玩具制品厂 【软件工程师】</h3>
+                        <p>
+                            主要负责公司IT系统维护，管理邮件服务器，文件服务器。开发公司OA办公协同系统。
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="project info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-project"></i> <span class="info-title">个人项目</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>基于汉王人脸识别的考勤薪资系统</h3>
+                        <p>
+                            使用Eclipse搭建SSH（Struts2+Spring3+Hibernate3）开发环境，系统用于工厂管理，包括考勤录入，薪资计算，员工资料组织结构管理，员工假期管理，员工五险一金管理等。项目的难点在于通过Java JNI 访问系统动态DLL接口的方式对汉王的人脸考勤机进行数据采集及员工人脸数据同步。每天500多人3000多条考勤记录实现秒传。每月考勤汇总表10万条记录，薪资计算及各项统计几秒钟内完成。
+                            <br/>
+                        </p>
+                    </li>
+                    <li>
+                        <h3>基于 SMS 及邮件的设备监视系统</h3>
+                        <p>
+                            使用Eclipse搭建SSH（Spring MVC+Spring3+Hibernate3）开发环境，系统用于监控公司网络及所有服务器设备运行，并图形化列出设备即时状态。当设备出现故障时，系统管理员会即时收到邮件或者短信提醒。故障被排除后，会收到设备恢复正常的提示。
+                        </p>
+                    </li>
+                    <li>
+                        <h3>图稿设计修改追踪系统</h3>
+                        <p>
+                            使用JSP + Struts1 + JDBC开发，系统记录每份客户产品图稿从创意描述，图稿创建、设计、修改、客户确认、打样、结案，从图稿到产品再到生产的一系列过程所产生的数据及图稿状态转换的处理。最后统计整个图稿流程所产生的设计费用，并生成月报表汇总。
+                        </p>
+                    </li>
+                    <li>
+                        <h3>欣胜汽车零配件商城（英语）</h3>
+                        <p>
+                            欣胜汽车零配件商城是B2B电子商务搜索平台，提供汽车继电器，汽车继电器插座、功率继电器、信号继电器、继电器开关等批发零售、提供汽车继电器厂商及经销商信息，提供汽车继电器参考信息和在线洽谈的机会。<br>
+                            网址：http://www.season-ec.com <a href="http://www.season-ec.com/" target="_blank">欣胜汽车零配件商城</a>
+                        </p>
+                    </li>
+                    <li>
+                        <h3>维康中医门户网站（法语）</h3>
+                        <p>
+                            介绍中医相关知识，在瑞士推广中医疗法，展示中医传统文化，接受中医治疗预约等<br>
+                            网址：http://chinergie.ch <a href="http://chinergie.ch/" target="_blank">维康中医</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="trophy info-unit">
+                <h2 class="info-header"><i class="iconfont icon-trophy"></i> <span class="info-title">专业技能</span></h2>
+                <hr>
+                <ul class="experience-list" style="line-height: 25px;">
+                    <li>熟悉MySQL，SQL Server, Oracle，了解PL/SQL，有存储过程的编写经验；</li>
+                    <li>掌握Java Web技术，如JSP，Servlet，JSTL，Ajax，JavaScript，CSS，XML等；</li>
+                    <li>熟练掌握Nginx，Tomcat，Jetty等应用服务器的使用和配置；</li>
+                    <li>熟悉各种网络协议，精通TCP/IP， UDP协议；</li>
+                    <li>熟悉Linux操作系统，有C/C++开发经验；</li>
+                    
+                </ul>
+            </div>
+            <div class="aboutme info-unit right-paragraph">
+                <h2 class="info-header"><i class="iconfont icon-flower"></i> <span class="info-title">自我评价</span></h2>
+                <hr>
+                <ul class="experience-list" style="line-height: 25px;">
+                    <li>具备强烈的责任心和进取心，能承受较大的工作压力；</li>
+                    <li>有良好的沟通与协调能力，具有团队革命合作精神。</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
